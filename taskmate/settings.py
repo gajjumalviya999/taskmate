@@ -1,5 +1,5 @@
 
-
+import django_heroku
 import os
 import environ
 
@@ -120,3 +120,4 @@ LOGIN_REDIRECT_URL ="todolist"
 LOGOUT_REDIRECT_URL="login"
 LOGIN_URL ='login'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+django_heroku.settings(locals())
